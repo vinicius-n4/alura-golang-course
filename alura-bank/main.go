@@ -1,9 +1,9 @@
 package main
 
 import (
+	"alura-golang-course/alura-bank/accounts"
+	"alura-golang-course/alura-bank/clients"
 	"fmt"
-	"github.com/vinicius-n4/alura-golang-course/alura-bank/accounts"
-	"github.com/vinicius-n4/alura-golang-course/alura-bank/clients"
 )
 
 func PagarBoleto(conta verificarConta, valorDoBoleto float64) {
