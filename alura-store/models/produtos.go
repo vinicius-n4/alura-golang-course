@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/vinicius-n4/alura-golang-course/alura-store/db"
+	"alura-golang-course/alura-store/db"
 )
 
 type Produto struct {

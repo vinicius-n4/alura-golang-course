@@ -1,3 +1,5 @@
+# alura-api-go-rest
+
 1. Subir o banco de dados PostgreSQL:
 ```shell
 $ docker-compose up
