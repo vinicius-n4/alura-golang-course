@@ -1,7 +1,7 @@
 package main
 
 import (
-	"alura-golang-course/alura-store/routes"
+	"github.com/vinicius-n4/alura-golang-course/alura-store/routes"
 	"net/http"
 )
 

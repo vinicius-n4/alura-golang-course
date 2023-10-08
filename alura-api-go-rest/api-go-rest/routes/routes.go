@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"alura-golang-course/alura-api-go-rest/api-go-rest/controllers"
-	"alura-golang-course/alura-api-go-rest/api-go-rest/middleware"
+	"github.com/vinicius-n4/alura-golang-course/alura-api-go-rest/api-go-rest/controllers"
+	"github.com/vinicius-n4/alura-golang-course/alura-api-go-rest/api-go-rest/middleware"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"log"

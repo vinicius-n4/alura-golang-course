@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"alura-golang-course/alura-store/models"
+	"github.com/vinicius-n4/alura-golang-course/alura-store/models"
 	"html/template"
 	"log"
 	"net/http"
