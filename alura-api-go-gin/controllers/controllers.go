@@ -32,3 +32,55 @@ func CreateStudent(c *gin.Context) {
 	database.DB.Create(&s)
 	c.JSON(http.StatusOK, s)
 }
+
+func GetStudentByID(c *gin.Context) {
+	var s models.Student
+	id := c.Params.ByName("id")
+	database.DB.First(&s, id)
+
+	if s.ID == 0 {
+		c.JSON(http.StatusNotFound, gin.H{
+			"Not found": "Student with ID " + id + " was not found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, s)
+}
+
+func DeleteStudent(c *gin.Context) {
+	var s models.Student
+	id := c.Params.ByName("id")
+	database.DB.Delete(&s, id)
+	
+	c.JSON(http.StatusOK, gin.H{
+		"data": "Student successfuly deleted"})
+}
+
+func UpdateStudent(c *gin.Context) {
+	var s models.Student
+	id := c.Params.ByName("id")
+	database.DB.First(&s, id)
+
+	if err := c.ShouldBindJSON(&s); err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"error": err.Error()})
+		return
+	}
+
+	database.DB.Model(&s).UpdateColumns(s)
+	c.JSON(http.StatusOK, s)
+}
+
+func GetStudentByCpf(c *gin.Context) {
+	var s models.Student
+	cpf := c.Param("cpf")
+	database.DB.Where(&models.Student{CPF: cpf}).First(&s)
+
+	if s.ID == 0 {
+		c.JSON(http.StatusNotFound, gin.H{
+			"Not found": "Student was not found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, s)
+}
