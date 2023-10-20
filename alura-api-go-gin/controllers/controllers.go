@@ -62,7 +62,7 @@ func UpdateStudent(c *gin.Context) {
 	database.DB.First(&s, id)
 
 	if err := c.ShouldBindJSON(&s); err != nil {
-		c.JSON(http.StatusOK, gin.H{
+		c.JSON(http.StatusBadRequest, gin.H{
 			"error": err.Error()})
 		return
 	}
