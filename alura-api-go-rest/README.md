@@ -10,10 +10,9 @@ $ docker-compose up
 $ go run main.go
 ```
 
-No próximo vídeo, vamos integrar uma aplicação front-end desenvolvida em React para consumir nossa API.
-Para isso, clique neste link para realizar o download do projeto React e siga os passos abaixo:
+Vamos integrar uma aplicação front-end desenvolvida em React para consumir a API.
 
-Após o download, verifique se Nodejs está instalado em sua máquina, executando o seguinte comando em terminal:
+Verifique se Nodejs está instalado em sua máquina, executando o seguinte comando no terminal:
 ```sh
 node --version
 ```
@@ -36,4 +35,4 @@ Para finalizar, ainda no terminal digite o comando abaixo para subir o servidor 
 npm start
 ```
 
-Após o carregamento, será exibida a seguinte página:
+Após o carregamento, será exibida a página do projeto.
