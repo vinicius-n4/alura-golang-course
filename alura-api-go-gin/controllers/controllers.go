@@ -59,7 +59,7 @@ func DeleteStudent(c *gin.Context) {
 	var s models.Student
 	id := c.Params.ByName("id")
 	database.DB.Delete(&s, id)
-	
+
 	c.JSON(http.StatusOK, gin.H{
 		"data": "Student successfuly deleted"})
 }
@@ -82,7 +82,7 @@ func UpdateStudent(c *gin.Context) {
 		return
 	}
 
-	database.DB.Model(&s).UpdateColumns(s)
+	database.DB.Save(&s)
 	c.JSON(http.StatusOK, s)
 }
 
