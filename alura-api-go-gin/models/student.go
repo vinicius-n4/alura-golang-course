@@ -1,8 +1,8 @@
 package models
 
 import (
-	"gorm.io/gorm"
 	"gopkg.in/validator.v2"
+	"gorm.io/gorm"
 )
 
 type Student struct {
