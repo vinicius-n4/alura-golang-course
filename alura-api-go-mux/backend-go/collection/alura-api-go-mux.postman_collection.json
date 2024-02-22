@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "3fd31c78-a178-4774-b6b7-538a1bc9dca6",
+		"name": "alura-api-go-mux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17447714"
+	},
+	"item": [
+		{
+			"name": "All Personalities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/personalidades",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"personalidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Personality",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Alberto Santos Dumont\",\n    \"historia\": \"Santos Dumont foi um aeronauta, esportista, autodidata e inventor brasileiro. Em 23 de outubro de 1906, ele voou cerca de sessenta metros a uma altura de dois a três metros com o Oiseau de Proie (francês para “ave de rapina”), no Campo de Bagatelle, em Paris. Em 12 de novembro de 1906, percorreu 220 metros a uma altura de seis metros com o Oiseau de Proie III\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/personalidades",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"personalidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Personality By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/personalidades/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"personalidades",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Personality",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/personalidades/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"personalidades",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Personality",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"historia\": \"Ele nasceu em 20 de julho de 1873 e faleceu em 23 de julho de 1932. Ele projetou, construiu e voou os primeiros balões dirigíveis com motor a gasolina. Ele também foi o primeiro a decolar a bordo de um avião impulsionado por um motor a gasolina\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/personalidades/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"personalidades",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
