@@ -264,3 +264,5 @@ $ curl --location 'localhost:8080/index'
 ```
 
 ### Preview Response
+
+![image](https://github.com/vinicius-n4/alura-golang-course/assets/58186122/5d6cde7b-518d-4396-809e-35ad403c63d8)
