@@ -10,4 +10,4 @@ Below is a list of courses studied, each with a link to its respective README:
 - [API with REST](https://github.com/vinicius-n4/alura-golang-course/tree/389a118212fa8b300ee1bab0b6d56401a3a1411a/alura-api-go-rest)
 - [Alura Bank](https://github.com/vinicius-n4/alura-golang-course/tree/389a118212fa8b300ee1bab0b6d56401a3a1411a/alura-bank)
 - [Alura Store](https://github.com/vinicius-n4/alura-golang-course/tree/389a118212fa8b300ee1bab0b6d56401a3a1411a/alura-store)
-- [website-monitoring](https://github.com/vinicius-n4/alura-golang-course/tree/389a118212fa8b300ee1bab0b6d56401a3a1411a/website-monitoring)
+- [Website Monitoring](https://github.com/vinicius-n4/alura-golang-course/tree/389a118212fa8b300ee1bab0b6d56401a3a1411a/website-monitoring)
