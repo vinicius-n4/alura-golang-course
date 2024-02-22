@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/vinicius-n4/alura-golang-course/alura-api-go-rest/api-go-rest/database"
-	"github.com/vinicius-n4/alura-golang-course/alura-api-go-rest/api-go-rest/models"
-	"github.com/vinicius-n4/alura-golang-course/alura-api-go-rest/api-go-rest/routes"
+	"github.com/vinicius-n4/alura-golang-course/alura-api-go-mux/backend-go/database"
+	"github.com/vinicius-n4/alura-golang-course/alura-api-go-mux/backend-go/models"
+	"github.com/vinicius-n4/alura-golang-course/alura-api-go-mux/backend-go/routes"
 	"fmt"
 )
 
