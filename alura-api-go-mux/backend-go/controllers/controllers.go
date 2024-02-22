@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"github.com/vinicius-n4/alura-golang-course/alura-api-go-rest/api-go-rest/database"
-	"github.com/vinicius-n4/alura-golang-course/alura-api-go-rest/api-go-rest/models"
+	"github.com/vinicius-n4/alura-golang-course/alura-api-go-mux/backend-go/database"
+	"github.com/vinicius-n4/alura-golang-course/alura-api-go-mux/backend-go/models"
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
