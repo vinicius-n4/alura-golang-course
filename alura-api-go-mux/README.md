@@ -40,6 +40,16 @@ $ npm start
 
 After loading, the project page will be displayed.
 
+### Troubleshooting
+
+The `"error:0308010C:digital envelope routines::unsupported"` may occurs because Node.js v17 and later use OpenSSL v3.0 which has had breaking changes.
+
+To resolve the error, set the NODE_OPTIONS environment variable to `--openssl-legacy-provider` when running your development server.
+
+```sh
+$ export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 ## API Documentation
 
 This API documentation provides information on the endpoints available for this service.
