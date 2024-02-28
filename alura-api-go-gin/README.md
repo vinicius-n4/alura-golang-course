@@ -12,6 +12,7 @@
     $ go run main.go
     ```
 1. Use Swagger to test API methods: `http://localhost:8080/swagger/index.html`
+    ![Screenshot from 2024-02-28 18-40-33(2)](https://github.com/vinicius-n4/alura-golang-course/assets/58186122/d53ef975-bb90-4bab-93e7-64e094209856)
 
 ## API Documentation
 
