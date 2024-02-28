@@ -3,14 +3,15 @@
 ## Run locally
 
 1. Start the PostgreSQL database:
-```sh
-$ docker-compose up
-```
+    ```sh
+    $ docker-compose up
+    ```
 
-2. Run the server locally on port `:8080`:
-```sh
-$ go run main.go
-```
+1. Run the server locally on port `:8080`:
+    ```sh
+    $ go run main.go
+    ```
+1. Use Swagger to test API methods: `http://localhost:8080/swagger/index.html`
 
 ## API Documentation
 
